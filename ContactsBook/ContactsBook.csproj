@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\add_contact.png" />
+    <None Remove="Icons\bubble-chat.png" />
+    <None Remove="Icons\contact_book.png" />
+    <None Remove="Icons\favorite -selected.png" />
+    <None Remove="Icons\favorite.png" />
+    <None Remove="Icons\house.png" />
+    <None Remove="Icons\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\add_contact.png" />
+    <Resource Include="Icons\bubble-chat.png" />
+    <Resource Include="Icons\contact_book.png" />
+    <Resource Include="Icons\favorite -selected.png" />
+    <Resource Include="Icons\favorite.png" />
+    <Resource Include="Icons\house.png" />
+    <Resource Include="Icons\user.png" />
+  </ItemGroup>
+
+</Project>
